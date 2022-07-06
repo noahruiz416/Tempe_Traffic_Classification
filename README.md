@@ -1,5 +1,5 @@
 # Tempe Traffic Classification Project Directory
-Traffic Classification Model with the Goal of tracking progress of the City of Tempe's "Vision Zero" through the use of Machine Learning & Statistics. Through this project I hope to gain a better understanding of traffic accidents in the City of Tempe. In particular various classification algorithims will be used in order to classify accidents based on their severity. Additionally extensive analysis will be conducted in this project to give Tempe policy makers a better understanding of the progress of the "vision zero" mission.
+Traffic Classification Model with the Goal of tracking progress of the City of Tempe's "Vision Zero" through the use of Machine Learning & Statistics. Through this project I hope to gain a better understanding of traffic accidents in the City of Tempe. In particular various classification algorithims will be used in order to classify accidents based on their severity and/or fatalaty. Additionally extensive analysis will be conducted in this project to give Tempe policy makers a better understanding of the progress of the "vision zero" mission.
 
 ## Resource Guide:
 Within this readme you will find various links, which lead to different files in this repository. 
