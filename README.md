@@ -19,6 +19,7 @@ Production files for the model:
 
 ### Prototype
 Initial Exploratory Notebook Analysis of the dataset itself, treat as a draft and not the final product of this analysis:
+- https://github.com/noahruiz416/Tempe_Traffic_Classification/blob/main/Tempe_Traffic_Prototype.ipynb
 - In Progress
 
 ### Data:
