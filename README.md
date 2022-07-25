@@ -14,18 +14,16 @@ Provides a brief overview of the project and various metrics, models and ethical
 
 ### Deliverable Files 
 Production files for the model:
-- Dependencies: Python 3.9+, Numpy, Pandas, Sklearn, Seaborn, Matplotlib, StatsModels API
-- In Progress
+- Dependencies: Python 3.9+, Numpy, Pandas, Sklearn, Seaborn, Matplotlib, Catboost, Imblearn
 
 ### Prototype
 Initial Exploratory Notebook Analysis of the dataset itself, treat as a draft and not the final product of this analysis:
-- https://github.com/noahruiz416/Tempe_Traffic_Classification/blob/main/Tempe_Traffic_Prototype.ipynb
-- In Progress
+- https://github.com/noahruiz416/Tempe_Traffic_Classification/tree/main/Prototypes
 
 ### Data:
 Dataset used for this analysis, the dataset caputures service usage for traffic accidents  in Maricopa County from January 2012 - December 2020:
 - https://github.com/noahruiz416/Tempe_Traffic_Classification/tree/main/Data
 
 ### Data Dictionary:
-Description of each of the fields in the dataset, good place to start for understanding the project:
-- In Progress
+Description of each of the fields in the dataset, good place to start for understanding the project. This link will send you to another site that contains the data dictionary:
+- https://gis.tempe.gov/design/data-dictionary/1.08%20Crash%20Data%20(detail)/
