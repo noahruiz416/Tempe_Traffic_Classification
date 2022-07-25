@@ -10,7 +10,7 @@ Provides a analysis of the key takeaways and findings of this project and potent
 
 ### Model Card 
 Provides a brief overview of the project and various metrics, models and ethical considerations when putting the project together:
-- In Progress
+- https://github.com/noahruiz416/Tempe_Traffic_Classification/blob/main/Model_Card.md
 
 ### Deliverable Files 
 Production files for the model:
