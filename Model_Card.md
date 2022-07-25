@@ -6,7 +6,6 @@ Jump to section:
 
 - [Model details](#model-details)
 - [Intended use](#intended-use)
-- [Factors](#factors)
 - [Metrics](#metrics)
 - [Evaluation data](#evaluation-data)
 - [Training data](#training-data)
@@ -16,7 +15,7 @@ Jump to section:
 
 ## Model details
 
-- Person or organization developing model: Noah Ruiz, ASU Unit for Data Science & Analytics
+- Person or organization developing model: Noah Ruiz
 
 - Model date: 
   7/25/22
@@ -58,16 +57,11 @@ Review section 4.2 of the [model cards paper](https://arxiv.org/abs/1810.03993).
 ### Out-of-scope use cases
 - Trying to predict if a person will get into a fatal accident or not (model lacks high precision)
 
-## Factors
-
-### Relevant factors
--
-
 ## Evalutation Metrics
 - Recall 
 - Precision 
 - F1 Score 
-- AUC
+- Accuracy
 
 ### Model performance measures
 - The following metrics are standard for classification problems and each evaluate a certain aspect of classification performance 
@@ -102,23 +96,29 @@ Review section 4.2 of the [model cards paper](https://arxiv.org/abs/1810.03993).
 
 ### Unitary results:
 - Catboost Classiifcation Model trained with undersampled data
-- Our final implementation using Catboost Classification recieved the following scores based on our evaluation metrics: 
-  - Recall:
-  - Precision: 
-  - F1 Score:
-  - Accuracy:
-  - AUC:
+- Utilized Stratified Cross Fold Validation with 5 folds on a train split 
+- Additionally utilized the test sample after cross fold validation
+- Evaluation metrics on the cross fold validation:
+  - Recall:    0.9285, 0.5714, 0.9230, 0.7857, 0.9285
+  - Precision: 0.0116, 0.0164, 0.0212, 0.0106, 0.0165
+  - F1 Score:  0.0230, 0.0319, 0.0415, 0.0209, 0.0324
+  - Accuracy:  0.7868, 0.9062, 0.8929, 0.8017, 0.8502
+
+- Evaluation metrics on test data:
+  - Recall:    0.9
+  - Precision: 0.0113
+  - F1 Score:  0.0223
+  - Accuracy:  0.8783
 
 - Further we conduct cross validation in order to gain a generalized understanding of model performance
 
 ## Ethical considerations
 
-### Data
-- 
-
 ### Risks and harms
-- 
+- Becuase of the imbalaned nature of the dataset and since our model was trained with undersampled data, it is very possible that our model may have some implict bias due to the relative rarity of fatal accidents
+- For example with only 0.01% of observations being fatal in the original dataset it is clear that a severe imbalance exists between classes 
+- Additionally rare events and imabalnced data is a relatively new field within machine learning that has not been thouroughly examined
 
 ## Caveats and recommendations
-- 
+- Due to the imbalanced nauture of the dataset I recommend that policy makers and model users, instead use the following model to analyze for feature importance for fatal car accidents. Our model was able to determine several features that had high importance during the learning process that could aid policy makers.
 
