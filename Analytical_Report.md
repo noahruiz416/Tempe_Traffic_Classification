@@ -45,3 +45,32 @@ Given the nature of the imbalanced data and rarity of a fatal car accident, it i
 <img width="500" alt="Screen Shot 2022-07-26 at 7 09 19 AM" src="https://user-images.githubusercontent.com/88412646/181068368-3f643e7f-5867-4b1a-a6f8-7ecd4ac23250.png">
 
 The ROC Curve shows the tradeoff between the False Positive Rate and the True Positive Rate at various probability thresholds. Since we are dealing with an imbalanced data problem the ROC Curve is not as important. In particular the ROC Curve tends to be overly optimistic on the imbalanced data. For this reason we will not focus on this metric.
+
+# Exploratory Visualizations
+
+## Accident Severity Counts 
+<img width="500" alt="Screen Shot 2022-07-26 at 7 43 18 AM" src="https://user-images.githubusercontent.com/88412646/181074999-5c0dfbf2-5856-4ee3-ac58-ac438cb64c4d.png">
+
+## Age Driver 1
+<img width="500" alt="Screen Shot 2022-07-26 at 7 43 35 AM" src="https://user-images.githubusercontent.com/88412646/181075065-748a62de-3943-429a-848f-062cac1d62d4.png">
+
+## Age Driver 2
+<img width="500" alt="Screen Shot 2022-07-26 at 7 43 49 AM" src="https://user-images.githubusercontent.com/88412646/181075114-b9b9f87a-82f5-47b3-b41a-b47e1e25100b.png">
+
+## Light Condition Counts
+<img width="500" alt="Screen Shot 2022-07-26 at 7 44 03 AM" src="https://user-images.githubusercontent.com/88412646/181075161-a5f45754-3506-4d6e-9a2b-d894ccdac740.png">
+
+## Collision Manner Counts
+<img width="500" alt="Screen Shot 2022-07-26 at 7 44 17 AM" src="https://user-images.githubusercontent.com/88412646/181075217-57bad61b-cba1-421c-b831-077b48e51bbb.png">
+
+## Weather Counts 
+<img width="500" alt="Screen Shot 2022-07-26 at 7 44 37 AM" src="https://user-images.githubusercontent.com/88412646/181075271-c68b501b-ab27-4ecf-a580-b7d5f7ebaddb.png">
+
+## Most Frequently Occuring Accident Streets
+<img width="500" alt="Screen Shot 2022-07-26 at 7 44 53 AM" src="https://user-images.githubusercontent.com/88412646/181075320-02ab2c70-f784-48c6-8031-fb2a64b55793.png">
+
+## Most Frequently Occuring Fatal Accident Streets
+<img width="500" alt="Screen Shot 2022-07-26 at 7 45 06 AM" src="https://user-images.githubusercontent.com/88412646/181075374-3dfec2e4-dffe-452e-9539-4869deec0b0a.png">
+
+## Fatalities Per Year
+<img width="500" alt="Screen Shot 2022-07-26 at 7 45 18 AM" src="https://user-images.githubusercontent.com/88412646/181075404-0470a521-e257-4c8c-beab-59987a737ec5.png">
