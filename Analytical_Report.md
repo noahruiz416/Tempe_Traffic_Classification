@@ -32,7 +32,7 @@ This chart shows the weight of various features on classifying fatal or non-fata
 
 Regarding the Shap Value it is simply a measure of how "much" a feature contributes to our classifications. A higher shap value indicates that the feature contributes a great deal to classifications while a small follow the opposite.
 
-Interstingly enough the cross street, street name and collission manner have little relevance in classifying fatal accidents which is quite suprising.
+Interstingly enough the cross street, street name and collission manner have little relevance in classifying fatal accidents which is quite suprising. Further the train and test data have the same levels of feature importance.
 
 ## Confusion Matrix on Test Data
 <img width="500" alt="Screen Shot 2022-07-26 at 7 08 51 AM" src="https://user-images.githubusercontent.com/88412646/181068277-1cfca768-1e21-4692-8462-ed2e3ddb7c9e.png">
@@ -42,6 +42,6 @@ The confusion matrix shows the quality of our predictions. On the upper left and
 Given the nature of the imbalanced data and rarity of a fatal car accident, it is clear that there will be a tradeoff between precision and recall or in other terms, a tradeoff between the quality and quantity of true positive predictions. In this case I believe that despite the tradeoff, it is worthwhile to make since we gain an understanding of features that may affect a positive classification.
 
 ## ROC Curve on Test Data
-<img width="384" alt="Screen Shot 2022-07-26 at 7 09 19 AM" src="https://user-images.githubusercontent.com/88412646/181068368-3f643e7f-5867-4b1a-a6f8-7ecd4ac23250.png">
+<img width="500" alt="Screen Shot 2022-07-26 at 7 09 19 AM" src="https://user-images.githubusercontent.com/88412646/181068368-3f643e7f-5867-4b1a-a6f8-7ecd4ac23250.png">
 
 The ROC Curve shows the tradeoff between the False Positive Rate and the True Positive Rate at various probability thresholds. Since we are dealing with an imbalanced data problem the ROC Curve is not as important. In particular the ROC Curve tends to be overly optimistic on the imbalanced data. For this reason we will not focus on this metric.
