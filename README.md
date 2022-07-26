@@ -13,7 +13,7 @@ Within this readme you will find various links, which lead to different files in
 
 ### Analytical Report 
 Provides a analysis of the key takeaways and findings of this project and potential next steps + recommendations:
-- https://github.com/noahruiz416/Tempe_Traffic_Classification/edit/main/Analytical_Report.md
+- https://github.com/noahruiz416/Tempe_Traffic_Classification/blob/main/Analytical_Report.md
 
 ### Model Card 
 Provides a brief overview of the project and various metrics, models and ethical considerations when putting the project together:
