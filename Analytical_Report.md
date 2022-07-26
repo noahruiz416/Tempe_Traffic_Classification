@@ -19,3 +19,29 @@ In short this shows that our model can identify fatal car accidents with good ac
 Because of this I would not recommend using this model for pure classification, due to the large number of false positives.
 Further the exploratory analysis conducted reveals the severe imbalance between fatal and nonfatal accidents which most causes the classification model to suffer in quality. 
 An important takeaway from this analysis is that although we may not be able to predict fatal traffic accidents with both high precision and recall, it is still possible to use our model to highlight features which lead to fatal accidents. 
+
+# Model Visualizations
+
+## Feature Importance on Train Data
+<img width="500" alt="Screen Shot 2022-07-26 at 7 08 06 AM" src="https://user-images.githubusercontent.com/88412646/181068119-d460812f-6818-490b-9a5b-25067b6fdd52.png">
+
+## Feature Importance on Test Data
+<img width="500" alt="Screen Shot 2022-07-26 at 7 08 28 AM" src="https://user-images.githubusercontent.com/88412646/181068197-5816764c-9ef3-46b3-91c9-78c3d85d8b6f.png">
+
+This chart shows the weight of various features on classifying fatal or non-fatal traffic accidents. From the graph it is clear that there are several features that have very strong importance in classifying our accidents. In particular we find that the commonly held notion of time, drugs, alchol and age all being key indicators of a fatal traffic accident to hold true. Our model reports that the time of day and whether or not alchol or drugs were involved tend to be the strongest contributors of classifications.
+
+Regarding the Shap Value it is simply a measure of how "much" a feature contributes to our classifications. A higher shap value indicates that the feature contributes a great deal to classifications while a small follow the opposite.
+
+Interstingly enough the cross street, street name and collission manner have little relevance in classifying fatal accidents which is quite suprising.
+
+## Confusion Matrix on Test Data
+<img width="500" alt="Screen Shot 2022-07-26 at 7 08 51 AM" src="https://user-images.githubusercontent.com/88412646/181068277-1cfca768-1e21-4692-8462-ed2e3ddb7c9e.png">
+
+The confusion matrix shows the quality of our predictions. On the upper left and lower right cells we see the predictions that were correct or the true positives and true negatives. On the upper right and lower left cells we can see the false positives and the false negatives. As you can see we have a very high amount of false positives which indicates that our model is not precise and makes poor quality decisions regarding the "fatal" classification. However I content with the models ability to classify true positives correctly. As you can see the model predicted 16 true positives, which indicates that our model is able to properly classify fatal accidents. 
+
+Given the nature of the imbalanced data and rarity of a fatal car accident, it is clear that there will be a tradeoff between precision and recall or in other terms, a tradeoff between the quality and quantity of true positive predictions. In this case I believe that despite the tradeoff, it is worthwhile to make since we gain an understanding of features that may affect a positive classification.
+
+## ROC Curve on Test Data
+<img width="384" alt="Screen Shot 2022-07-26 at 7 09 19 AM" src="https://user-images.githubusercontent.com/88412646/181068368-3f643e7f-5867-4b1a-a6f8-7ecd4ac23250.png">
+
+The ROC Curve shows the tradeoff between the False Positive Rate and the True Positive Rate at various probability thresholds. Since we are dealing with an imbalanced data problem the ROC Curve is not as important. In particular the ROC Curve tends to be overly optimistic on the imbalanced data. For this reason we will not focus on this metric.
