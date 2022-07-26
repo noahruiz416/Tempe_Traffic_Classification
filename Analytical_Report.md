@@ -57,6 +57,8 @@ The ROC Curve shows the tradeoff between the False Positive Rate and the True Po
 ## Age Driver 2
 <img width="500" alt="Screen Shot 2022-07-26 at 7 43 49 AM" src="https://user-images.githubusercontent.com/88412646/181075114-b9b9f87a-82f5-47b3-b41a-b47e1e25100b.png">
 
+These two histograms show the distribtuion of ages for driver 1 and 2 respectively. As you can see there seems to be a slight skew to the right of the dataset for both age of the driver variables. At first I thought this was from chance however from further inspection I realized that it was from outliers within the dataset which I got rid off.
+
 ## Light Condition Counts
 <img width="500" alt="Screen Shot 2022-07-26 at 7 44 03 AM" src="https://user-images.githubusercontent.com/88412646/181075161-a5f45754-3506-4d6e-9a2b-d894ccdac740.png">
 
@@ -66,11 +68,17 @@ The ROC Curve shows the tradeoff between the False Positive Rate and the True Po
 ## Weather Counts 
 <img width="500" alt="Screen Shot 2022-07-26 at 7 44 37 AM" src="https://user-images.githubusercontent.com/88412646/181075271-c68b501b-ab27-4ecf-a580-b7d5f7ebaddb.png">
 
+For weather, collision manner and light condition counts all three are very imbalanced. Since we are dealing with count data this makes sense, with most of the counts following an exponential / poission distribution. Additionally this further nails down the imbalanced nature of this project and traffic accidents.
+
 ## Most Frequently Occuring Accident Streets
 <img width="500" alt="Screen Shot 2022-07-26 at 7 44 53 AM" src="https://user-images.githubusercontent.com/88412646/181075320-02ab2c70-f784-48c6-8031-fb2a64b55793.png">
 
 ## Most Frequently Occuring Fatal Accident Streets
 <img width="500" alt="Screen Shot 2022-07-26 at 7 45 06 AM" src="https://user-images.githubusercontent.com/88412646/181075374-3dfec2e4-dffe-452e-9539-4869deec0b0a.png">
 
+Interstingly enough the most frequent non fatal accident streets also made up 4 of the most frequent fatal accident streets. From this I recommend that policy makers pay special attention to the above streets as they tend to have a large amount of accidents both fatal and non fatal. Additionally each of those streets tend to be a major area of commerce and are mostly centered around downtown Tempe and Arizona State Univeristy.
+
 ## Fatalities Per Year
 <img width="500" alt="Screen Shot 2022-07-26 at 7 45 18 AM" src="https://user-images.githubusercontent.com/88412646/181075404-0470a521-e257-4c8c-beab-59987a737ec5.png">
+
+Since we only have data from around 8 years it is hard to draw any intersting conclusions from the above time-series plot. We can see that the number of fatal accidents is currently decreasing, however it is hard to tell if this trend will continue or not due to the sporadic nature of fatal traffic accidents.
