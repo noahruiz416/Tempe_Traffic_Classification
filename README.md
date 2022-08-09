@@ -1,6 +1,9 @@
 # Tempe Traffic Classification Project Directory
 Traffic Classification Model with the Goal of understanding fatal accidents in the City of Tempe through the use of Machine Learning & Statistics. In particular various classification algorithims will be used in order to classify accidents based on whether or not a fatality occured in a given accident. Additionally extensive analysis will be conducted in this project to give Tempe policy makers a better understanding of the progress of the "vision zero" mission.
 
+# For Visualizations go To (scroll past summary, to see visuals): 
+https://github.com/noahruiz416/Tempe_Traffic_Classification/blob/main/Analytical_Report.md
+
 Quick Summary:
 - We find that "median age between drivers", "drug use", "alchol use" and "time category" were key features in classifying an accident as fatal or nonfatal 
 - Further we find that a severe imbalance exists within classes, with less than 1% of accidents being fatal 
@@ -10,6 +13,18 @@ Quick Summary:
 
 ## Resource Guide:
 Within this readme you will find various links, which lead to different files in this repository. 
+
+### Dependencies
+Things needed to get this project running on your machine 
+- Python 3.9+
+- Numpy
+- Pandas
+- Sklearn
+- Seaborn
+- Matplotlib
+- Catboost
+- Imblearn
+- Google Collab / Jupyter for Prototypes 
 
 ### Analytical Report 
 Provides a analysis of the key takeaways and findings of this project and potential next steps + recommendations:
